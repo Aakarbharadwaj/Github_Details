@@ -12,6 +12,7 @@ const Card = () => {
                 if (username) {
                     let res = await fetch(`https://api.github.com/users/${username}`);
                     let info = await res.json();
+                    console.log(info);
                     setdata(info);
                 }
             } catch (error) {

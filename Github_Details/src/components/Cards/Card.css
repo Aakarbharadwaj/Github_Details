@@ -3,11 +3,16 @@
     margin-top: 60px;
 }
 
+.container {
+    border: 2px solid red;
+}
+
 .box {
     margin-top: 30px;
 
     text-align: center;
 }
+
 
 .Follower {
     width: 40%;

@@ -3,14 +3,44 @@
     margin-top: 60px;
 }
 
+.head {
+    text-align: center;
+    color: azure;
+    margin-bottom: 40px;
+}
+
 .container {
-    border: 2px solid red;
+    border: 2px solid #c5e7ff;
+    width: 50%;
+    padding: 10px;
+    border-radius: 50px;
+
+    button {
+        background-color: #c5e7ff;
+        border: none;
+        color: rgb(3, 69, 117);
+        padding: 0 10px 4px 10px;
+        border-radius: 20px;
+    }
+}
+
+.srch {
+    border: none;
+    background-color: rgb(3, 69, 117);
+    width: 90%;
+    color: white;
+    background: transparent;
+    outline: none;
+    flex: 1;
+}
+
+.display {
+    text-align: center;
+    margin: 100px;
 }
 
 .box {
     margin-top: 30px;
-
-    text-align: center;
 }
 
 

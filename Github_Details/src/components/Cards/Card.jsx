@@ -30,18 +30,24 @@ const Card = () => {
 
     let User = () => {
         setusername(updatename);
+        setupdatename("");
     }
     return (
+
         <div className='box'>
+            <h1 className='head'>
+                GitHub profile fetcher
+            </h1>
             <div className="container">
                 <input
                     onChange={updateuser}
                     className="srch"
+                    value={updatename}
                     placeholder="User id eg.: Aakarbharadwaj" />
                 <button onClick={User}>search</button>
             </div>
 
-            {data &&
+            {data ?
                 <div className="card" style={{ width: '18rem' }}>
                     <img src={data.avatar_url} className="card-img-top" alt="..." />
                     <div className="card-body">
@@ -50,8 +56,10 @@ const Card = () => {
                         <a href={data.html_url} className="btn btn-primary">Go to Git Profile</a>
                         <a href={data.html_url} className="btn border text-primary">Go to linkedIn Profile</a>
                     </div>
+                </div> :
+                <div className='display'>
+                    <h1>Your search will be reflected here...</h1>
                 </div>
-
             }
 
         </div>
